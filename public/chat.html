@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chat · Trainer Bubu</title>
+  <link rel="stylesheet" href="/assets/css/base.css" />
+  <link rel="stylesheet" href="/assets/css/chat.css" />
+</head>
+<body>
+  <header class="container" style="display:flex;justify-content:space-between;align-items:center;">
+    <div>🏋️‍♂️ Trainer Bubu</div>
+    <a class="btn" href="/">← Volver</a>
+  </header>
+
+  <main class="container">
+    <div id="chat-panel" class="chat-panel" style="position:static; display:block; width:auto; max-width:900px;">
+      <div class="chat-header">
+        <div class="title">Chat con Bubu</div>
+        <button id="chat-close" class="chat-close" type="button">⨯</button>
+      </div>
+      <div id="chat-log" class="chat-log"></div>
+      <div class="compose">
+        <textarea id="chat-input" placeholder="Cuéntame tu objetivo…"></textarea>
+        <button id="chat-send" type="button">Enviar</button>
+      </div>
+    </div>
+  </main>
+
+  <script type="module">
+    import { ChatWidget } from "/assets/js/chat.js";
+    // Como esta página es dedicada, no necesito botón "open"; el panel ya está visible
+    const chat = new ChatWidget({
+      openBtn:  null,                 // no usamos botón de apertura aquí
+      panel:    "#chat-panel",
+      closeBtn: "#chat-close",
+      log:      "#chat-log",
+      input:    "#chat-input",
+      sendBtn:  "#chat-send",
+      userLabel: "Tú",
+      botLabel:  "B"
+    });
+    // No llamo a .open(); el panel ya está visible por CSS inline
+  </script>
+</body>
+</html>
