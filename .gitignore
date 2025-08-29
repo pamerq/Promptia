@@ -1,9 +1,4 @@
-# dependencias
 node_modules/
-
-# secretos
 .env
-
-# SO / editor
 .DS_Store
 Thumbs.db

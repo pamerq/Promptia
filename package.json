@@ -1,0 +1,28 @@
+{
+  "name": "promptia",
+  "version": "1.0.0",
+  "description": "A lightweight web chat widget that uses OpenAI’s **Responses API** to behave like your custom assistant. The server keeps your API key safe; the browser only talks to your server.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pamerq/Promptia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/pamerq/Promptia/issues"
+  },
+  "homepage": "https://github.com/pamerq/Promptia#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "node-fetch": "^3.3.2"
+  }
+}
