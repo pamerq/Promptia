@@ -1,0 +1,23 @@
+/* Panel flotante de chat o contenedor en /chat.html */
+.chat-panel {
+  position: fixed; right: 20px; bottom: 20px;
+  width: 380px; max-height: 75vh; display: none;
+  background: var(--card); border: 1px solid var(--line);
+  border-radius: var(--radius); box-shadow: 0 16px 48px rgba(0,0,0,.5);
+  overflow: hidden; z-index: 9999;
+}
+.chat-header {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:10px 12px; border-bottom:1px solid var(--line); background:#121317;
+  font-weight:700;
+}
+.chat-close { cursor:pointer; font-weight:800; padding:6px 10px; border-radius:8px; background:#1e1f24; }
+.chat-log { padding: 12px; overflow: auto; max-height: 50vh; }
+.row { display:flex; gap:10px; margin-bottom:10px; }
+.avatar { flex:0 0 30px; height:30px; border-radius:50%; display:grid; place-items:center; font-size:12px; font-weight:800; }
+.user .avatar { background:#444; color:#fff; }
+.bot .avatar { background: var(--accent); color:#fff; }
+.bubble { background:#1b1c1f; border:1px solid #2a2b31; padding:10px 12px; border-radius:12px; max-width:75%; white-space:pre-wrap; }
+.compose { display:flex; gap:8px; padding:10px; border-top:1px solid var(--line); background:#101114; }
+.compose textarea { flex:1; resize:none; min-height:38px; max-height:120px; padding:10px; border-radius:10px; border:1px solid #2a2b31; background:#0d0f13; color:var(--fg); }
+.compose button { padding:10px 14px; border:0; border-radius:10px; background:var(--accent); color:#fff; font-weight:700; cursor:pointer; }
