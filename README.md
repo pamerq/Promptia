@@ -13,3 +13,9 @@ A lightweight web chat widget that uses OpenAI’s **Responses API** to behave l
 4. Open `http://localhost:3000`
 
 ## Project structure
+
+## Model Trainer
+
+1. Install Install Openai
+2. Write .jsonl
+3. npm run train

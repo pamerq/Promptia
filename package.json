@@ -6,11 +6,15 @@
   "main": "server/index.js",
   "scripts": {
     "dev": "node server/index.js",
-    "start": "node server/index.js"
+    "start": "node server/index.js",
+    "train": "node model-training/train.js",
+    "ft:status": "node model-training/check-status.js",
+    "list:models": "node model-training/list-models.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^17.2.1",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "openai": "^5.22.1"
   }
 }
